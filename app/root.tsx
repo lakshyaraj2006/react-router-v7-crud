@@ -11,6 +11,7 @@ import type { Route } from "./+types/root";
 import "./app.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WarningAlert from "./components/WarningAlert";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -49,6 +50,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <WarningAlert />
 
       <main className="mx-auto max-w-6xl px-6 py-10">
         <Outlet />
